@@ -1,0 +1,205 @@
+{
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": []
+	},
+	"easycom": {
+		"custom": {
+			"^u--(.*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue",
+			"^up-(.*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue",
+			"^u-([^-].*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue"
+		}
+	},
+	"pages": [{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			},
+			"enablePullDownRefresh": true
+		},
+		{
+			"path": "pages/vote/vote",
+			"style": {
+				"navigationBarTitleText": "投票列表"
+			},
+			"enablePullDownRefresh": true
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		},
+		{
+			"path": "pages/vote-list/vote-list",
+			"style": {
+				"navigationBarBackgroundColor": "#14104C",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "参与投票"
+			},
+			"enablePullDownRefresh": true
+		},
+		{
+			"path": "pages/activity-list/activity-list",
+			"style": {
+				"navigationBarTitleText": "活动列表"
+			},
+			"enablePullDownRefresh": true
+		},
+		{
+			"path": "pages/vote-detail/vote-detail",
+			"style": {
+				"navigationBarTitleText": "投票详情"
+			}
+		},
+		{
+			"path": "pages/sign-up/sign-up",
+			"style": {
+				"navigationBarTitleText": "确认报名"
+			}
+		},
+		{
+			"path": "pages/ranking/ranking",
+			"style": {
+				"navigationBarTitleText": "排行榜"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "活动报名平台"
+			}
+		},
+		{
+			"path": "pages/privacy/privacy",
+			"style": {
+				"navigationBarTitleText": "隐私协议"
+			}
+		},
+		{
+			"path": "pages/activity-detail/activity-detail",
+			"style": {
+				"navigationBarTitleText": "活动详情"
+			}
+		},
+		{
+			"path": "pages/user-edit/user-edit",
+			"style": {
+				"navigationBarTitleText": "信息编辑"
+			}
+		},
+		{
+			"path": "pages/user-fav/user-fav",
+			"style": {
+				"navigationBarTitleText": "我的收藏"
+			}
+		},
+		{
+			"path": "pages/user-message/user-message",
+			"style": {
+				"navigationBarTitleText": "我的消息"
+			}
+		},
+		{
+			"path": "pages/user-vote/user-vote",
+			"style": {
+				"navigationBarTitleText": "我参与的投票"
+			}
+		},
+		{
+			"path": "pages/user-activity/user-activity",
+			"style": {
+				"navigationBarTitleText": "已报名活动"
+			}
+		},
+		{
+			"path": "pages/notice/notice",
+			"style": {
+				"navigationBarTitleText": "通知公告"
+			}
+		},
+		{
+			"path": "pages/notice-detail/notice-detail",
+			"style": {
+				"navigationBarTitleText": "公告详情"
+			}
+		},
+		{
+			"path": "pages/draw-lottery/draw-lottery",
+			"style": {
+				"navigationBarTitleText": "抽奖"
+			}
+		},
+		{
+			"path": "pages/official/official",
+			"style": {
+				"navigationBarTitleText": "关注公众号"
+			}
+		},
+		{
+			"path": "pages/webview/webview",
+			"style": {
+				"navigationBarTitleText": "领取奖品"
+			}
+		},
+		{
+			"path": "pages/troupes/troupes",
+			"style": {
+				"navigationBarTitleText": "院团"
+			}
+		},
+		{
+			"path": "pages/troupes-ranking/troupes-ranking",
+			"style": {
+				"navigationBarTitleText": "院团排行榜"
+			}
+		},
+		{
+			"path": "pages/troupes-detail/troupes-detail",
+			"style": {
+				"navigationBarTitleText": "院团详情"
+			}
+		},
+		{
+			"path": "pages/edit-signup/edit-signup",
+			"style": {
+				"navigationBarTitleText": "确定报名"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "艺术正青春共创大赛",
+		"navigationBarBackgroundColor": "#347DFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"color": "#909399",
+		"selectedColor": "#347DFF",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "white",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/home_cur.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/activity-list/activity-list",
+				"iconPath": "static/tabbar/activity.png",
+				"selectedIconPath": "static/tabbar/activity_cur.png",
+				"text": "活动"
+			}, {
+				"pagePath": "pages/vote/vote",
+				"iconPath": "static/tabbar/vote.png",
+				"selectedIconPath": "static/tabbar/vote_cur.png",
+				"text": "投票"
+			}, {
+				"pagePath": "pages/user/user",
+				"iconPath": "static/tabbar/my.png",
+				"selectedIconPath": "static/tabbar/my_cur.png",
+				"text": "我的"
+			}
+		]
+	}
+}
